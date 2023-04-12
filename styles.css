@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+input:required{
+    appearance: none;
+}
+
+
+ul{
+    list-style-type: none
+
+}
+
+
+section.left-section{
+    width: 45vw;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.list-of-inputs{
+    display: flex;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    width: 55vw;
+    height: 100%;
+    background-color: lightblue;
+}
+
+h1.title{
+    color: white;
+    font-size: 3rem;
+
+}
+
+.title-wrapper{
+    width: inherit;
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: absolute;
+    margin-top: 10vh;
+    opacity: calc(75%);
+}
+.title-footer{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin-left: 15vw;
+    margin-bottom: 10px;
+}
+
+img{
+    width: inherit;
+}
+
+a, a:visited{
+    color: green;
+    text-decoration: none;
+
+}

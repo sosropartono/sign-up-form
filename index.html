@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lorem sign</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="left-section">
+            <div class="title-wrapper">
+                <h1 class="title">Odin</h1>
+            </div>
+            <div class="title-footer">Photo by Ivana Cajina on <a href="https://unsplash.com/photos/asuyh-_ZX54">Unsplash</a></div>
+
+            <img src="background_img.avif" alt="">
+       
+    </section>
+
+
+    <!-- Split right side into 3 sections, header, mid, footer -->
+<section class="right-side">
+
+    <div class="header">
+        <h6>Not a real online service! Signing up for this form will help you realize your
+            dreams. Sign up now to get started!
+
+            You know you want to. :]
+        </h6>
+
+    </div>
+    <div class="mid-form"></div>
+        <form action="index.html">
+            <ul class="list-of-inputs">
+                <label for="first-name">
+                    <input type="text" minlength="2" maxlength="30" required>
+                </label>
+                <li>
+                    <label for="last-name">
+                        <input type="text" minlength="2" maxlength="30" required>
+                    </label>
+                </li>
+                <!-- Nested label and email are semantically paired, no need for for and id pairing -->
+                <li>
+                    <label for="email">
+                        <input type="email" minlength="2" maxlength="30">
+                    </label>
+                </li>
+                <li>
+                    <label for="phone-number">
+                        <input type="text" minlength="1" maxlength="30" inputmode="numeric" pattern="\.(\d{3}).?(\d{3}).?(\d{4})">
+                    </label>
+                </li>
+                <li>
+                    <label for="password">
+                        <input type="text" minlength="1" maxlength="30" required>
+                    </label>
+                </li>
+                <li>
+                    <label for="password-confirm">
+                        <input type="password" minlength="1" maxlength="30" required>
+                    </label>
+                </li>
+            </ul>
+    
+            <button type="submit">Submit</button>
+    
+    
+    
+        </form>
+
+        <div class="bottom-buttons"></div>
+</section>
+    
+</body>
+</html>
