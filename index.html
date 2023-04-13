@@ -10,67 +10,72 @@
 <body>
     <section class="left-section">
             <div class="title-wrapper">
-                <h1 class="title">Odin</h1>
+                <h1 class="title">Lorem Form</h1>
             </div>
-            <div class="title-footer">Photo by Ivana Cajina on <a href="https://unsplash.com/photos/asuyh-_ZX54">Unsplash</a></div>
+        
+            <p class="credits">Photo by Ivana Cajina on <a href="https://unsplash.com/photos/asuyh-_ZX54">Unsplash</a></p>
 
             <img src="background_img.avif" alt="">
-       
     </section>
 
 
     <!-- Split right side into 3 sections, header, mid, footer -->
 <section class="right-side">
 
-    <div class="header">
-        <h6>Not a real online service! Signing up for this form will help you realize your
-            dreams. Sign up now to get started!
+    <div class="right-side-box">
+        <h1 class="header">Not a real online service! Signing up for this form will help you realize your
+            dreams. 
 
-            You know you want to. :]
-        </h6>
-
+        </h1>
+        <h1>Sign up now to get started!</h1>
     </div>
-    <div class="mid-form"></div>
-        <form action="index.html">
+    <div class="middle-box">
+        <h1>Let's do this! </h1>
+        <form id="create-account" action="index.html" method="post">
             <ul class="list-of-inputs">
-                <label for="first-name">
-                    <input type="text" minlength="2" maxlength="30" required>
-                </label>
-                <li>
-                    <label for="last-name">
+                <div class="column-input-1">
+                    <li>
+                        <label for="first-name">First Name</label>
                         <input type="text" minlength="2" maxlength="30" required>
-                    </label>
-                </li>
-                <!-- Nested label and email are semantically paired, no need for for and id pairing -->
-                <li>
-                    <label for="email">
-                        <input type="email" minlength="2" maxlength="30">
-                    </label>
-                </li>
-                <li>
-                    <label for="phone-number">
-                        <input type="text" minlength="1" maxlength="30" inputmode="numeric" pattern="\.(\d{3}).?(\d{3}).?(\d{4})">
-                    </label>
-                </li>
-                <li>
-                    <label for="password">
-                        <input type="text" minlength="1" maxlength="30" required>
-                    </label>
-                </li>
-                <li>
-                    <label for="password-confirm">
-                        <input type="password" minlength="1" maxlength="30" required>
-                    </label>
-                </li>
-            </ul>
-    
-            <button type="submit">Submit</button>
-    
-    
-    
-        </form>
+                    </li>
+                    <li>
+                        <label for="last-name"> Last Name
+                        </label>
+                        <input type="text" minlength="2" maxlength="30" required>
 
-        <div class="bottom-buttons"></div>
+                    </li>
+                    <!-- Nested label and email are semantically paired, no need for for and id pairing -->
+                    <li>
+                        <label for="email"> Email</label>
+                        <input class="email-input"type="email" minlength="2" maxlength="30">
+
+                    </li>
+                </div>
+                <div class="column-input-2">
+                    <li>
+                        <label for="phone-number"> Phone Number</label>
+                        <input class="phone-input"type="text" minlength="1" maxlength="30" inputmode="numeric" pattern="\.(\d{3}).?(\d{3}).?(\d{4})">
+
+                    </li>
+                    <li>
+                        <label for="password"> Password</label>
+                        <input class="password-input" type="text" minlength="1" maxlength="30" required>
+
+                    </li>
+                    <li>
+                        <label for="password-confirm" > Password Confirm</label>
+                        <input type="password" minlength="1" maxlength="30" required >
+
+                    </li>
+                </div>
+            </ul>
+            </form>
+    </div>
+
+        <div class="right-side-box">
+            <button type="submit" form="create-account">Create Account</button>
+            <h1>Already have an account? <a href="index.html">Log in</a></h1>
+        </div>
 </section>
     
 </body>
