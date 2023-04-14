@@ -97,8 +97,12 @@ img{
 
 button{
     background-color: #596D48;
+    font-size: large;
     color: white;
     border-radius: 10px;
+    font-weight: bold;
+    min-height: 7vh;
+    min-width: 11vw;
 }
 
 .middle-box{
@@ -123,12 +127,6 @@ label{
     color: gray;
 }
 
-button{
-    appearance: none;
-    width: 10vw;
-    height: 5vh;
-
-}
 
 
 ul{
