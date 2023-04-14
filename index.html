@@ -23,60 +23,68 @@
 <section class="right-side">
 
     <div class="right-side-box">
-        <h1 class="header">Not a real online service! Signing up for this form will help you realize your
-            dreams. 
+        <h1 class="header-1">Not a real online service! You know you need something like this in your life
+            to help you achieve your dreams. Signing up for this form will help you realize them.
 
         </h1>
-        <h1>Sign up now to get started!</h1>
+        <h1 class="header-2">Sign up now to get started!</h1>
     </div>
     <div class="middle-box">
-        <h1>Let's do this! </h1>
+        <h1 class="form-header-text">Let's do this! </h1>
         <form id="create-account" action="index.html" method="post">
             <ul class="list-of-inputs">
                 <div class="column-input-1">
                     <li>
-                        <label for="first-name">First Name</label>
+                        <label for="first-name">FIRST NAME</label>
                         <input type="text" minlength="2" maxlength="30" required>
                     </li>
                     <li>
-                        <label for="last-name"> Last Name
+                        <label for="last-name">LAST NAME
                         </label>
                         <input type="text" minlength="2" maxlength="30" required>
 
                     </li>
                     <!-- Nested label and email are semantically paired, no need for for and id pairing -->
                     <li>
-                        <label for="email"> Email</label>
+                        <label for="email">EMAIL</label>
                         <input class="email-input"type="email" minlength="2" maxlength="30">
 
                     </li>
                 </div>
                 <div class="column-input-2">
                     <li>
-                        <label for="phone-number"> Phone Number</label>
-                        <input class="phone-input"type="text" minlength="1" maxlength="30" inputmode="numeric" pattern="\.(\d{3}).?(\d{3}).?(\d{4})">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input class="phone-input"type="text" minlength="10" maxlength="10" inputmode="numeric">
 
                     </li>
                     <li>
-                        <label for="password"> Password</label>
-                        <input class="password-input" type="text" minlength="1" maxlength="30" required>
+                        <label for="password">PASSWORD</label>
+                        <input class="password-input" type="password" minlength="1" maxlength="20" required>
 
                     </li>
                     <li>
-                        <label for="password-confirm" > Password Confirm</label>
-                        <input type="password" minlength="1" maxlength="30" required >
+                        <label for="password-confirm" >PASSWORD CONFIRM</label>
+                        <input class="password-confirm-input" type="password" minlength="1" maxlength="20" required invalid>
 
                     </li>
+                    
+
+
                 </div>
             </ul>
+            <p class="password-error-msg"></p>
             </form>
+
     </div>
 
         <div class="right-side-box">
-            <button type="submit" form="create-account">Create Account</button>
-            <h1>Already have an account? <a href="index.html">Log in</a></h1>
+            <button type="button" form="create-account">Create Account</button>
+            <h1 class="question">Already have an account? <a href="index.html">Log in</a></h1>
         </div>
-</section>
+
     
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
